@@ -40,7 +40,8 @@ function showSummary()
 
     switch(activity)
     {
-        case "0": return;
+        case "0":
+            break;
 
         case "1": multiplier = 1.2;
             break;
@@ -64,6 +65,9 @@ function showSummary()
     localStorage.setItem("tdeeValue", tdee);
     localStorage.setItem("bmiValue", bmi);
     
-    location.href = "summary.html";
+    if(age !== "" && height !== "" && weight !== "")
+        location.href = "summary.html";
+    else
+        alert("Please fill the required information!");
 } 
 
