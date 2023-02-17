@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="./sumPageStyle.css" />
+</head>
+<body>
+    <div class="main">
 
+        <h1 id="title">SUMMARY</h1>
+
+        <h2 id="maintenance-cals">Maintenance calories</h2>
+
+        <div class="calories-container">
+            <p><span id="calories">2756</span> kcal</p>
+        </div>
+
+        <div class="bmi-results">
+            <div>
+                <p id="text-bmi-results">Your BMI score is: <span id="bmi-score">18.5</span>
+                which classifies as <span id="bmi-category">underweight</span></p>
+            </div>
+        </div>
+
+        <div class="bmi-info">
+
+            <div class="bmi-scores">
+                <p>18.5 or less</p>
+                <p>18.5 - 24.99</p>
+                <p>25 - 29.99</p>
+                <p>30 or more</p>
+            </div>
+    
+            <div class="bmi-categories">
+                <p>Underweight</p>
+                <p>Normal weight</p>
+                <p>Overweight</p>
+                <p>Obese</p>
+            </div>
+
+        </div>
+
+        <div class="recalculate-btn">
+
+            <button onclick="showHomePage()">RECALCULATE</button>
+
+        </div>
+        
+    </div>
+
+    <script src="./sumPageScript.js"></script>
+
+</body>
+</html>
