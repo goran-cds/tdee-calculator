@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDEE Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="main">
 
+        <h1 id="title">TDEE Calculator</h1>
+
+        <form>
+
+            <fieldset>
+
+                <label>Gender</label>
+                <label id="male-label"><input id="male-input" type="radio" name="gender" value="male" class="inline"/>Male</label>
+                <label id="female-label"><input id="female-input" type="radio" name="gender" value="female" class="inline"/>Female</label>
+    
+            </fieldset>
+    
+            <fieldset>
+    
+                <label for="age-input">Age</label>
+                <input type="text" id="age-input"/>
+    
+                <label for="weight-input">Weight</label>
+                <input type="text" id="weight-input" placeholder="kg"/>
+    
+                <label for="height-input">Height</label>
+                <input type="text" id="height-input" placeholder="cm"/>
+    
+            </fieldset>
+    
+            <fieldset>
+    
+                <label for="dropdown">Activity level</label>
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Sedentary (office job)</option>
+                    <option value="2">Light exercise(1-2 days/week)</option>
+                    <option value="3">Moderate exercise(3-5 days/week)</option>
+                    <option value="4">Heavy exercise (6-7 days/week)</option>
+                    <option value="5">Athlete (2x a day)</option>
+                </select>
+    
+            </fieldset>
+    
+            <fieldset>
+    
+                <label for="bodyfat-input">Body fat(optional)</label>
+                <input type="text" id="bodyfat-input" placeholder="15%" />
+    
+            </fieldset>
+
+        </form>
+
+        <div class="calculate-btn">
+
+            <button onclick="showSummary()">CALCULATE</button>
+
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
