@@ -25,7 +25,11 @@ function showSummary()
     activity = activityInput;
     bodyfat = bodyfatInput;
 
-    if(gender === "male")
+    if(bodyfat !== "")
+    {
+        bmr = 370 + (21.6 * (weight * (1 - bodyfat / 100))); 
+    }
+    else if(gender === "male")
     {
         bmr = 10 * weight + 6.25 * height - 5 * age + 5;
     }
