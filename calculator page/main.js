@@ -65,7 +65,7 @@ function showSummary()
     localStorage.setItem("tdeeValue", tdee);
     localStorage.setItem("bmiValue", bmi);
     
-    if(age !== "" && height !== "" && weight !== "")
+    if(age !== "" && height !== "" && weight !== "" && activity !== "")
         location.href = "summary.html";
     else
         alert("Please fill the required information!");
